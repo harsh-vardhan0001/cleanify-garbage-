@@ -1,0 +1,199 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body setup */
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navbar styling */
+ /* .navbar {
+    background-color: #28a745; 
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}  */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #2e7d32, #1976d2); /* Green to Blue Gradient */
+    padding: 15px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  
+  .navbar .links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbar .links a:hover {
+    background-color: white;
+    color: #1976d2; /* Blue color for text on hover */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar .links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .navbar .logo {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+  }
+  
+
+/* Hero section */
+.hero {
+    background-color: #e8f5e9; /* light green background */
+    padding: 50px 20px;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    color: #2e7d32; /* dark green */
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2e7d32; /* green */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #1b5e20; /* darker green on hover */
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+/* Features section */
+.features {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature-card h2 {
+    margin-bottom: 1rem;
+    color: #28a745;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #28a745;
+    color: white;
+    font-size: 0.9rem;
+}

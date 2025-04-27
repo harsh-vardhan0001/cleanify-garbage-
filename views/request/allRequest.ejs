@@ -1,0 +1,38 @@
+<!-- views/allRequests.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Requests</title>
+  <link rel="stylesheet" href="/css/allRequest.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center">All Pickup Requests</h1>
+
+    <!-- <div class="requests-list">
+      <% requests.forEach(request => { %>
+        <div class="request-item">
+          <h3><%= request.location %></h3>
+          <p><%= request.description %></p>
+          <img src="<%= request.imageUrl %>" alt="Request Image" class="request-image">
+        </div>
+      <% }) %>
+    </div> -->
+    <div class="cards-container">
+      <% requests.forEach(function(request) { %>
+          <div class="card">
+              <h3><%= request.title %></h3>
+              <p><strong>Location:</strong> <%= request.location %></p>
+              <p><strong>Description:</strong> <%= request.description %></p>
+              <p><strong>Status:</strong> <%= request.status %></p>
+              <p><strong>Image</strong> <img src="<%= request.imageUrl %>" alt="photo"></p>
+          </div>
+      <% }) %>
+  </div>
+  
+  </div>
+</body>
+</html>
